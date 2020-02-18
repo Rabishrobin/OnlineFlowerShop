@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flower shop</title>
+    <link href="F:\Flower Shop\Stylesheet.css" rel="stylesheet"/>
+    <script src="F:\Flower Shop\FlowerShopValidation.js">
+    </script>
+</head>
+<body>
+    <form id="form1" style="margin-left: 10%">
+        <div class="center">
+            <div>
+                <header class="top">
+                    <h1>FLOWER SHOP ONLINE</h1>
+                </header>
+            </div>
+            <div class="empty"></div>
+            <div>
+                <div class="row">
+                    <div class="column_design">
+                        <img src="F:\Flower Shop\Images\img.png" class="flower" />
+                    </div>
+                    <div class="column_content">
+                        <div>
+                            <h2>Secure Payment Page</h2>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td style="width: 30%">
+                                        <a><b>Select Language</b></a>
+                                    </td>
+                                    <td style="width: 60%">
+                                        <select id="Language" style="width: 70%">
+                                            <option value="English" selected="selected">English</option>
+                                            <option value="Tamil">Tamil</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a>Payment method</a></td>
+                                    <td><b>Visa</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td><b>Item ordered</b></td>
+                                    <td rowspan="2">
+                                        <img src="F:\Flower Shop\Images\logo.png" class="image" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Amount</td>
+                                    <td><b>£100.00</b></td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table_bottom">
+                            <h3 class="heading">Card details</h3>
+                            <p>You must fill in fields marked with *</p>
+                            <table class="table_design">
+                                <tr>
+                                    <td style="width: 30%">*Card number</td>
+                                    <td>
+                                        <input type="text" id="txtCardNumber" class="box_border long_box" required="required" /><br>
+                                        <span id="CardNumber" class="validation_message">Invalid card number</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*<ins>Security Code</ins></td>
+                                    <td>
+                                        <input type="text" id="txtSecurityCode" maxlength="3" class="box_border short_box" required="required" /><br>
+                                        <span id="SecurityCode" class="validation_message">Invalid security code</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Expiry date</td>
+                                    <td>
+                                        <select id="month" class="box_border month_box">
+                                        </select>
+                                        &nbsp
+                                        <select id="year" class="box_border year_box">
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Cardholder's name</td>
+                                    <td>
+                                        <input type="text" id="txtName" class="box_border long_box" required="required"/><br>
+                                        <span id="CardholderName" class="validation_message">Invalid cardholder name</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h3 class="heading">Cardholder details</h3>
+                            <p>You must fill in fields marked with *</p>
+                            <table class="table_design">
+                                <tr>
+                                    <td style="width: 30%">*Address 1</td>
+                                    <td>
+                                        <input type="text" id="txtAddress1" class="box_border long_box" required="required"/><br>
+                                        <span id="Address1" class="validation_message">Invalid address</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp Address 2</td>
+                                    <td>
+                                        <input type="text" id="txtAddress2" class="box_border long_box" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp Address 3</td>
+                                    <td>
+                                        <input type="text" id="txtAddress3" class="box_border long_box" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Town/City</td>
+                                    <td>
+                                        <input type="text" id="txtCity" class="box_border long_box" required="required"/><br>
+                                        <span id="City" class="validation_message">Invalid town/city</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp Region</td>
+                                    <td>
+                                        <input type="text" id="txtRegion" class="box_border long_box" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Postcode/Zip code</td>
+                                    <td>
+                                        <input type="number" id="txtPostcode" class="box_border medium_box" required="required" /><br>
+                                        <span id="Postcode" class="validation_message">Invalid postcode</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Country</td>
+                                    <td>
+                                        <select id="country" class="box_border medium_box">
+                                            <option selected="selected">United Kingdom</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp Telephone</td>
+                                    <td>
+                                        <input type="text" id="txtTelephone" class="box_border medium_box" /><br>
+                                        <span id="PhoneNumber" class="validation_message">Invalid phone number</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp Fax</td>
+                                    <td>
+                                        <input type="text" id="txtFax" class="box_border medium_box" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Email address</td>
+                                    <td>
+                                        <input type="text" id="txtEmail" class="box_border long_box" required="required"/><br>
+                                        <span id="Email" class="validation_message">Invalid email address</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td>
+                                        <img src="F:\Flower Shop\Images\startAgain.png" class="bottom_icon" />
+                                        <input type="reset" name="startAgain" value="START AGAIN" class="button" />
+                                    </td>
+                                    <td style="text-align: right">
+                                        <input type="button" value="MAKE PAYMENT" class="button" onclick="validateDetails()" />
+                                        <img src="F:\Flower Shop\Images\bottom_flower.png" class="flower_icon" onclick="validateDetails()" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <img src="F:\Flower Shop\Images\cancel.png" class="bottom_icon" />
+                                        <input type="button" name="cancel" value="CANCEL" class="button" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="border-top: 3px solid yellowgreen">
+                            <h2>Refunds and Returns</h2>
+                            <p>
+                                For more information vist our
+                                <a href="#">Refunds and Returns Policy</a>
+                                <br />
+                                <img src="F:\Flower Shop\Images\worldpay.jpg" />
+                                <a>For help with your payment visit the </a>
+                                <a href="http://help.worldpay.com/home" class="hyperlink">World Help</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column_icon">
+                    	<img src="F:\Flower Shop\Images\questionMark.png" class="bottom_icon top_question">
+                    	<br>
+                    	<img src="F:\Flower Shop\Images\questionMark.png" class="bottom_icon bottom_question">
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <h2 class="bottom">Thank you for shopping at Flowershop. Have a nice day
+                </h2>
+            </footer>
+        </div>
+        <script>
+        	var yearStartValue = new Date().getFullYear();
+		    var yearEndValue = 2050
+		    var yearOption = "";
+		    for (var year = yearStartValue ; year <= yearEndValue; year++) {
+		        yearOption += "<option>" + year + "</option>";
+		    }
+		    document.getElementById("year").innerHTML = yearOption;
+		    var monthStartValue = 1;
+		    var monthEndValue = 12;
+		    var monthOption = "";
+		    for (var month = monthStartValue ; month <= monthEndValue; month++) {
+		        monthOption += "<option>" + month + "</option>";
+		    }
+		    document.getElementById("month").innerHTML = monthOption;
+        </script>
+    </form>
+</body>
+</html>
