@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Flower shop</title>
-    <link href="F:\Flower Shop\Stylesheet.css" rel="stylesheet"/>
-    <script src="F:\Flower Shop\FlowerShopValidation.js">
+    <link href="Styles\Stylesheet.css" rel="stylesheet"/>
+    <script src="Scripts\FlowerShopValidation.js">
     </script>
 </head>
 <body>
-    <form id="form1" style="margin-left: 10%">
+    <form id="form1" style="margin-left: 25%">
         <div class="center">
             <div>
                 <header class="top">
@@ -19,7 +19,7 @@
             <div>
                 <div class="row">
                     <div class="column_design">
-                        <img src="F:\Flower Shop\Images\img.png" class="flower" />
+                        <img src="Images\img.png" class="flower" />
                     </div>
                     <div class="column_content">
                         <div>
@@ -44,7 +44,7 @@
                                     <td>Description</td>
                                     <td><b>Item ordered</b></td>
                                     <td rowspan="2">
-                                        <img src="F:\Flower Shop\Images\logo.png" class="image" />
+                                        <img src="Images\logo.png" class="image" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -61,7 +61,7 @@
                                 <tr>
                                     <td style="width: 30%">*Card number</td>
                                     <td>
-                                        <input type="text" id="txtCardNumber" class="box_border long_box" required="required" /><br>
+                                        <input type="text" id="txtCardNumber" class="box_border long_box" required="required" maxlength="19" /><br>
                                         <span id="CardNumber" class="validation_message">Invalid card number</span>
                                     </td>
                                 </tr>
@@ -85,7 +85,7 @@
                                 <tr>
                                     <td>*Cardholder's name</td>
                                     <td>
-                                        <input type="text" id="txtName" class="box_border long_box" required="required"/><br>
+                                        <input type="text" id="txtName" class="box_border long_box" required="required" maxlength="35" /><br>
                                         <span id="CardholderName" class="validation_message">Invalid cardholder name</span>
                                     </td>
                                 </tr>
@@ -128,7 +128,7 @@
                                 <tr>
                                     <td>*Postcode/Zip code</td>
                                     <td>
-                                        <input type="number" id="txtPostcode" class="box_border medium_box" required="required" /><br>
+                                        <input type="text" id="txtPostcode" class="box_border medium_box" required="required" maxlength="10" /><br>
                                         <span id="Postcode" class="validation_message">Invalid postcode</span>
                                     </td>
                                 </tr>
@@ -143,20 +143,20 @@
                                 <tr>
                                     <td>&nbsp Telephone</td>
                                     <td>
-                                        <input type="text" id="txtTelephone" class="box_border medium_box" /><br>
+                                        <input type="text" id="txtTelephone" class="box_border medium_box" maxlength="15" /><br>
                                         <span id="PhoneNumber" class="validation_message">Invalid phone number</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp Fax</td>
                                     <td>
-                                        <input type="text" id="txtFax" class="box_border medium_box" />
+                                        <input type="text" id="txtFax" class="box_border medium_box" maxlength="10" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>*Email address</td>
                                     <td>
-                                        <input type="text" id="txtEmail" class="box_border long_box" required="required"/><br>
+                                        <input type="text" id="txtEmail" class="box_border long_box" required="required" maxlength="64" /><br>
                                         <span id="Email" class="validation_message">Invalid email address</span>
                                     </td>
                                 </tr>
@@ -166,18 +166,18 @@
                             <table style="width: 100%">
                                 <tr>
                                     <td>
-                                        <img src="F:\Flower Shop\Images\startAgain.png" class="bottom_icon" />
+                                        <img src="Images\startAgain.png" class="bottom_icon" />
                                         <input type="reset" name="startAgain" value="START AGAIN" class="button" />
                                     </td>
                                     <td style="text-align: right">
-                                        <input type="button" value="MAKE PAYMENT" class="button" onclick="validateDetails()" />
-                                        <img src="F:\Flower Shop\Images\bottom_flower.png" class="flower_icon" onclick="validateDetails()" />
+                                        <input type="submit" value="MAKE PAYMENT" class="button" onclick="validateDetails()" />
+                                        <img src="Images\bottom_flower.png" class="flower_icon" onclick="validateDetails()" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
-                                        <img src="F:\Flower Shop\Images\cancel.png" class="bottom_icon" />
-                                        <input type="button" name="cancel" value="CANCEL" class="button" />
+                                        <img src="Images\cancel.png" class="bottom_icon" onclick="cancelPayment()" />
+                                        <input type="button" name="cancel" value="CANCEL" class="button" onclick="cancelPayment()" />
                                     </td>
                                 </tr>
                             </table>
@@ -188,16 +188,16 @@
                                 For more information vist our
                                 <a href="#">Refunds and Returns Policy</a>
                                 <br />
-                                <img src="F:\Flower Shop\Images\worldpay.jpg" />
+                                <img src="Images\worldpay.jpg" />
                                 <a>For help with your payment visit the </a>
                                 <a href="http://help.worldpay.com/home" class="hyperlink">World Help</a>
                             </p>
                         </div>
                     </div>
                     <div class="column_icon">
-                    	<img src="F:\Flower Shop\Images\questionMark.png" class="bottom_icon top_question">
+                    	<img src="Images\questionMark.png" class="bottom_icon top_question">
                     	<br>
-                    	<img src="F:\Flower Shop\Images\questionMark.png" class="bottom_icon bottom_question">
+                    	<img src="Images\questionMark.png" class="bottom_icon bottom_question">
                     </div>
                 </div>
 
